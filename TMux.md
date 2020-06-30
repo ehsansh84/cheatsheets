@@ -23,3 +23,6 @@
 | 0..9                 | Switch between tabs  |
 | w                 | Switch between tabs (choose)  |
 |                  |   |
+
+###### Email: Ehsan.Shirzadi@Gmail.com
+###### Web: www.ehsanshirzadi.com
