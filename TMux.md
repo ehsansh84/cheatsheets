@@ -1,8 +1,12 @@
 # TMux cheatsheet by Ehsan Shirzadi
 
+### Terminal commands:
+
 | Command          | Description                         |
 | ---------------- |:-----------------------------------:|
 | tmux new -s name | A news session with the name 'name' |
+
+### In TMux press ctrl+b+ one of these characters:
 
 | ctrl+b+...       | Description                         |
 | ---------------- |:-----------------------------------|
