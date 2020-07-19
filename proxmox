@@ -1,0 +1,9 @@
+# Proxmox terminal commands cheatsheet by Ehsan Shirzadi
+
+Backup a container
+```vzdump 102```
+where 102 is the ID of container
+
+
+###### Email: Ehsan.Shirzadi@Gmail.com
+###### Web: www.ehsanshirzadi.com
