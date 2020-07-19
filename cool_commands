@@ -5,6 +5,8 @@
 Want to know your public IP?
 ### wget -qO - icanhazip.com
 
+Remove all files but one?
+### rm -v !("filename")
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
