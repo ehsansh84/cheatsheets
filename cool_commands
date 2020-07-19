@@ -8,5 +8,11 @@ Want to know your public IP?
 Remove all files but one?
 ### rm -v !("filename")
 
+Remove all files but two?
+### rm -v !("filename1"|"filename2") 
+
+Remove all files but two types?
+### rm -v !(*.zip|*.odt)
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
