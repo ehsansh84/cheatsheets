@@ -2,8 +2,10 @@
 
 Backup a container in /var/lib/vz/dump
 `vzdump 102` or `vzdump 102 --compress gzip`
-
 where 102 is the ID of container
+
+Restore a container:
+`pct restore 200 vzdump-lxc-112-2020_07_19-12_28_51.tar.gz  --storage local-lvm`
 
 See the list of containers:
 ```
