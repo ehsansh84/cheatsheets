@@ -16,3 +16,9 @@ sudo docker pull image_name
 ```
 sudo docker images
 ```
+
+##Docker stop container:
+```
+sudo docker stop cintainer_id
+```
+
