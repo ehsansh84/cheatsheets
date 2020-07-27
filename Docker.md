@@ -19,6 +19,12 @@ sudo docker images
 
 ##Docker stop container:
 ```
-sudo docker stop cintainer_id
+sudo docker stop container_id
 ```
+
+##Docker build (use it inside the folder containing DockerFile):
+```
+sudo docker build -t name:tag
+```
+
 
