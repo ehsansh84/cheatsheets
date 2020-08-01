@@ -27,4 +27,10 @@ sudo docker stop container_id
 sudo docker build -t name:tag
 ```
 
+##Get into the docker:
+```
+sudo docker exec -it container_name bash
+```
+
+
 
