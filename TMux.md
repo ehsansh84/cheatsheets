@@ -5,6 +5,7 @@
 | Command          | Description                         |
 | ---------------- |:-----------------------------------:|
 | tmux new -s name | A news session with the name 'name' |
+| tmux rename-window -t number newname | Rename a pane |
 
 ### In TMux press ctrl+b+ one of these characters:
 
