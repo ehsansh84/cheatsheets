@@ -31,6 +31,8 @@ sudo docker build -t name:tag
 ```
 sudo docker exec -it container_name bash
 ```
+## Remove all None images
+docker rmi $(docker images -f dangling=true -q)
 
 
 
