@@ -14,5 +14,9 @@ Remove all files but two?
 Remove all files but two types?
 ### rm -v !(*.zip|*.odt)
 
+Rename terminal window
+echo $'\033]30;NewName\007'
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
+
