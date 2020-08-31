@@ -17,6 +17,9 @@ Remove all files but two types?
 Rename terminal window
 echo $'\033]30;NewName\007'
 
+List all files but *conf
+### ls -I "*conf"
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
