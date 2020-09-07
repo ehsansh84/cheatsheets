@@ -20,6 +20,9 @@ echo $'\033]30;NewName\007'
 List all files but *conf
 ### ls -I "*conf"
 
+list all files containing my_text
+###grep -iRl "my_text" *
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
