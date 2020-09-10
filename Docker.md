@@ -34,5 +34,6 @@ sudo docker exec -it container_name bash
 ## Remove all None images
 docker rmi $(docker images -f dangling=true -q)
 
-
-
+## Connect a containr to a network
+docker network connect <network> <container>
+  
