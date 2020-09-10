@@ -1,0 +1,13 @@
+# Firewall commands cheatsheet by Ehsan Shirzadi
+
+### ufw commands:
+
+ufw enable
+ufw disable
+ufw status
+ufw allow <port>
+ufw deny <port>
+
+
+###### Email: Ehsan.Shirzadi@Gmail.com
+###### Web: www.ehsanshirzadi.com
