@@ -23,6 +23,11 @@ List all files but *conf
 list all files containing my_text
 ###grep -iRl "my_text" *
 
+get certificate:
+```
+certbot certonly -d domain —extend -d www.domain.com
+```
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
