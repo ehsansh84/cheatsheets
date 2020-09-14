@@ -25,7 +25,7 @@ list all files containing my_text
 
 get certificate:
 ```
-certbot certonly -d domain —extend -d www.domain.com
+certbot certonly -d domain —expand -d www.domain.com
 ```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
