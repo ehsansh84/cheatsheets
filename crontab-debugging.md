@@ -9,6 +9,10 @@ Output will be added to /home/cron.log
 ### You want to know where is your crontab file?
 Look here: `/var/spool/cron/crontabs`
 
+### System logs for cron?
+ grep CRON /var/log/syslog
+
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
