@@ -28,6 +28,11 @@ get certificate:
 certbot certonly -d domain —expand -d www.domain.com
 ```
 
+See listening ports:
+```
+ss -tulpn
+```
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
