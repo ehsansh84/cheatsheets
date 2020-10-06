@@ -65,6 +65,7 @@ server {
 ```
 
 ### Nginx error codes:
+
 ```
 map $status $status_text {
   400 'Bad Request';
@@ -110,5 +111,6 @@ map $status $status_text {
   default 'Something is wrong';
 }
 ```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
