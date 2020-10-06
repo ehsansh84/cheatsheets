@@ -56,6 +56,12 @@ server {
         root   /usr/share/nginx/html;
     }
 }
+`
+### Include configuration file:
+```
+server {
+    includle physical_path;
+}
 ```
 
 ### Nginx error codes:
