@@ -56,7 +56,7 @@ server {
         root   /usr/share/nginx/html;
     }
 }
-`
+
 ### Include configuration file:
 ```
 server {
