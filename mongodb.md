@@ -1,5 +1,11 @@
 # MongoDB cheatsheet by Ehsan Shirzadi
 
+### Want allways pretty print in mongo shell?
+edit `$HOME/.mongorc.js` to enable pretty print globally by default.
+```
+DBQuery.prototype._prettyShell = true
+```
+
 ### Create a role:
 ```
 db.createRole({role : 'my_role', privileges : [ {resource : {db : "my_db", collection : "my_collection"}, actions : ["find"]}], roles : ["read"]})
