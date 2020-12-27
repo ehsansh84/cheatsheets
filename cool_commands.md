@@ -33,6 +33,13 @@ See listening ports:
 ss -tulpn
 ```
 
+Grep lines before and after:
+```
+grep -A 5 keyword gilename #after
+grep -B 5 keyword gilename #before
+grep -C 5 keyword gilename #center
+```
+
 ### Problem with apt update?
 ```
 printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
