@@ -23,3 +23,11 @@ db.contest.aggregate([
 ])
 ```
 
+### MongoDB SELECT COUNT GROUP BY With conditions:
+```
+db.contest.aggregate([
+    {"$match": {}},
+    {"$group" : {_id:"$province", count:{$sum:1}}}
+])
+```
+
