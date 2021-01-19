@@ -15,3 +15,11 @@ db.createRole({role : 'my_role', privileges : [ {resource : {db : "my_db", colle
 ```
 db.createUser( { user: "my_user", pwd: "my_password", roles: [ { role: "my_role", db: "temp" }] })
 ```
+
+### MongoDB SELECT COUNT GROUP BY:
+```
+db.contest.aggregate([
+    {"$group" : {_id:"$province", count:{$sum:1}}}
+])
+```
+
