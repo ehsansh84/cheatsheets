@@ -5,3 +5,4 @@ If Whoops then:
 sudo rm -rf ~/.config/nordvpn
 the reboot system
 
+nordvpn whitelist add port 8282
