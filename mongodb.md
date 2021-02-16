@@ -31,3 +31,9 @@ db.contest.aggregate([
 ])
 ```
 
+### mongoexport using queu":
+```
+ mongoexport --db newshub --collection news --out news_small.json --query '{"status": "summary"}'
+ mongoexport --db newshub --collection news --out news_small.json --query '{"status": "summary", "create_date": {"$gt": {"$date": "2021-01-14T11:56:13.248Z"}}}'
+ ```
+
