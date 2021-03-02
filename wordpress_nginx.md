@@ -32,5 +32,18 @@ location ~ .php$ {
             include fastcgi_params;
 }
 ```
+#### Increase max upload size:
+```
+vim /etc/php/7.3/fpm/php.ini
+```
+Change these valuse as you want:
+```
+post_max_size = 128M
+upload_max_filesize = 128M
+```
+Then:
+```
+service php7.3-fpm restart
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
