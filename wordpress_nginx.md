@@ -1,6 +1,8 @@
 # Installation of wordpress on nginx by Ehsan Shirzadi
 
-When creating a Mysql user, You should change the password authentication plugin to: Native Mysql Authentication
+When creating a Mysql user, You should change the password authentication plugin to: `Native Mysql Authentication`
+Database host name is: `mysql_docker_container_name`
+
 
 ### Set the owner to www-data:
 ```
@@ -13,5 +15,22 @@ find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \; 
 ```
 
+### nginx config to put your wordpress in: domain.com/wordpress
+```
+location /wordpress {
+        index  index.php;
+        try_files $uri $uri/ /wordpress/index.php?q=$request_uri;
+    }
+```
+#### Add this for php support:
+```
+location ~ .php$ {
+            try_files $uri =404;
+            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_index index.php;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+}
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
