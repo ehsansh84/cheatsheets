@@ -18,5 +18,14 @@ Press `#` and it will add a comment to the first line. Then press `ECS` and wait
 - Move down and select the lines till you want to uncomment.
 - press `x` and it will uncomment all the selected lines at once.
 
+### Settings for indentation for Yaml files:
+vim /etc/vim/vimrc.local
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
+
+
+
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
