@@ -45,6 +45,10 @@ grep -A 5 keyword gilename #after
 grep -B 5 keyword gilename #before
 grep -C 5 keyword gilename #center
 ```
+Tunnel network traffic:
+```
+sudo sshuttle --dns -vvr root@x.x.x.x 0/0
+```
 
 ### Problem with apt update?
 ```
