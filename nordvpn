@@ -7,3 +7,5 @@ the reboot system
 
 nordvpn whitelist add port 8282 22 8585
 
+Support recommendations:
+nordvpn whitelist add subnet 192.168.0.0/16
