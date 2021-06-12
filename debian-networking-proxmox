@@ -35,5 +35,19 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 Done!
+
+### Now enable remote-ssh:
+```
+sudo apt install openssh-server
+```
+Edit `/etc/ssh/sshd_config`:
+```
+PermitRootLogin yes
+```
+Restart sshd service:
+```
+service sshd restart
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
