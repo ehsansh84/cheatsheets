@@ -25,5 +25,10 @@ It shows a key and value like:
 _acme-challenge.shirzadi.ir
 RvQ08kL5HOx82iqJyehetJ2yp-Epq5gRzqm2kFha_cI
 ```
+
+In mx toolbox using TXT lookup you can check that the value is set or not:
+```
+https://mxtoolbox.com
+```
 Create a DNS record with type of Text. set the key and value.
 Then proceed in cert bot. Thats it!
