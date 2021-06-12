@@ -41,9 +41,9 @@ echo "You can simulate on-screen typing just like in the movies" | pv -qL 10
 
 Grep lines before and after:
 ```
-grep -A 5 keyword gilename #after
-grep -B 5 keyword gilename #before
-grep -C 5 keyword gilename #center
+grep -A 5 keyword filename #after
+grep -B 5 keyword filename #before
+grep -C 5 keyword filename #center
 ```
 Tunnel network traffic:
 ```
