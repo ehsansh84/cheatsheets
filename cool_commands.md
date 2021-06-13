@@ -54,7 +54,11 @@ sudo sshuttle --dns -vvr root@x.x.x.x 0/0
 ```
 printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 ```
-
+Change system DNS:
+```
+vim /etc/systemd/resolved.conf 
+systemctl restart systemd-resolved.service 
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
