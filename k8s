@@ -1,5 +1,10 @@
 # Kubernetes cheatsheet by Ehsan Shirzadi
 
+First install docker:
+```
+apt install docker.io
+```
+
 ### How to install master:
 Run this for all nodes
 ```
@@ -25,6 +30,10 @@ cat > /etc/docker/daemon.json <<EOF
   "storage-driver": "overlay2"
 }
 EOF
+```
+
+```
+systemctl restart docker
 ```
 
 Email: Ehsan.Shirzadi@Gmail.com
