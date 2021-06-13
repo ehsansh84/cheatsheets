@@ -45,9 +45,12 @@ sysctl -p
 kubeadm init
 ```
 
-
+Join a node with this command :
+```
 kubeadm join xxx.xxx.xxx.xxx:6443 --token wqjxpm.vqupwqtp5xyvf1cg \
         --discovery-token-ca-cert-hash sha256:637711c34b8e97dcd7531c8a1eda15725657d84dd39dfcbc8702050927ffe075
+```
+
 ```
 apt-get install bash-completion
 ```
