@@ -44,5 +44,25 @@ sysctl -p
 ```
 kubeadm init
 ```
+
+
+kubeadm join xxx.xxx.xxx.xxx:6443 --token wqjxpm.vqupwqtp5xyvf1cg \
+        --discovery-token-ca-cert-hash sha256:637711c34b8e97dcd7531c8a1eda15725657d84dd39dfcbc8702050927ffe075
+```
+apt-get install bash-completion
+```
+
+Add these to .bashrc for master
+```
+complete -F __start_kubectl k
+source <(kubectl completion bash)
+export KUBECONFIG=/etc/kubernetes/admin.conf        
+```
+```
+export kubever=$(kubectl version | base64 | tr -d '\n')
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+```
+
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
