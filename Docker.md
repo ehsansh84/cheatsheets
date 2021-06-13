@@ -7,27 +7,27 @@ $ sudo sh get-docker.sh
 ```
 
 ### Images:
-##Pull new image:
+## Pull new image:
 ```
 sudo docker pull image_name
 ```
 
-##See images list:
+## See images list:
 ```
 sudo docker images
 ```
 
-##Docker stop container:
+## Docker stop container:
 ```
 sudo docker stop container_id
 ```
 
-##Docker build (use it inside the folder containing DockerFile):
+## Docker build (use it inside the folder containing DockerFile):
 ```
 sudo docker build -t name:tag
 ```
 
-##Get into the docker:
+## Get into the docker:
 ```
 sudo docker exec -it container_name bash
 ```
