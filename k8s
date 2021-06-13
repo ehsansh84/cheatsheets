@@ -36,5 +36,13 @@ EOF
 systemctl restart docker
 ```
 
+### For debian:
+```
+sysctl -p
+```
+### To start master:
+```
+kubeadm init
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
