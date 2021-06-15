@@ -50,6 +50,12 @@ Join a node with this command :
 kubeadm join xxx.xxx.xxx.xxx:6443 --token wqjxpm.vqupwqtp5xyvf1cg \
         --discovery-token-ca-cert-hash sha256:637711c34b8e97dcd7531c8a1eda15725657d84dd39dfcbc8702050927ffe075
 ```
+To join each new node you should do it in master:
+```
+kubeadm token create --print-join-command
+```
+Then you will have join command to enter on new node and join
+If an error says that: `[ERROR Swap]: running with swap on is not supported. Please disable swap` simply enter `swapoff -a` on the node
 
 ```
 apt-get install bash-completion
