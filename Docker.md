@@ -37,6 +37,11 @@ docker rmi $(docker images -f dangling=true -q)
 ## Connect a containr to a network
 docker network connect <network> <container>
 
+## Save/Load a Docker image
+```
+  docker save -o image.tar image
+  docker load -i image.tar
+```
 ## Rename and image inside private registry
 docker tag old_name new_name
 docker rmi old:name
