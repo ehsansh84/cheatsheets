@@ -43,8 +43,8 @@ sudo unmount /mnt/ro_dir
 ```
 If you want to make mount permament edit `/etc/fstab`:
 ```
-server_ip:/ro_dir   /mnt/ro_dir   nfs   defaults,+netdev 0 0
-server_ip:/rw_dir   /mnt/rw_dir   nfs   defaults,+netdev 0 0
+server_ip:/ro_dir   /mnt/ro_dir   nfs   defaults,_netdev 0 0
+server_ip:/rw_dir   /mnt/rw_dir   nfs   defaults,_netdev 0 0
 ```
 And load all:
 ```
