@@ -35,7 +35,7 @@ sudo mount -t nfs server_ip:/rw_dir /mnt/rw_dir
 ```
 Now you can see the partition you just mounted:
 ```
-mound
+mount
 ```
 If you want to unmount:
 ```
