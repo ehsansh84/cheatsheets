@@ -28,6 +28,10 @@ get certificate:
 certbot certonly -d domain —expand -d www.domain.com
 ```
 
+Change timzone for ubuntu
+```
+sudo timedatectl set-timezone Asia/Tehran
+```
 See listening ports:
 ```
 ss -tulpn
