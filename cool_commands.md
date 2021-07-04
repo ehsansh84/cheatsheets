@@ -8,6 +8,12 @@ Want to know your public IP?
 Remove all files but one?
 ### rm -v !("filename")
 
+Base64 Encode
+### echo string_to_encode | base64
+
+Base64 Decode
+### echo ZWhzYW5zaDg0Okp1Y2lhbEB4NjQ= | base64 --decode
+
 Remove all files but two?
 ### rm -v !("filename1"|"filename2") 
 
