@@ -61,7 +61,7 @@ If an error says that: `[ERROR Swap]: running with swap on is not supported. Ple
 apt-get install bash-completion
 ```
 
-Add these to .bashrc for master
+Add these to .bashrc for master in root user
 ```
 complete -F __start_kubectl k
 source <(kubectl completion bash)
