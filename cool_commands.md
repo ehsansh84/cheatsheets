@@ -79,6 +79,13 @@ Change system DNS:
 vim /etc/systemd/resolved.conf 
 systemctl restart systemd-resolved.service 
 ```
+Change system DNS another way:
+```
+vim /etc/systemd/resolved.conf 
+systemctl restart systemd-resolved
+```
+
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
