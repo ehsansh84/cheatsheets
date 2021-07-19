@@ -8,7 +8,7 @@ sudo chmod 755 /ro_dir
 sudo mkdir rw_dir
 sudo chmod 777 /rw_dir
 ```
-Now edit `/etc/exportd`:
+Now edit `/etc/exports`:
 ```
 /ro_dir   *(ro,sync,no_subtree_check)
 /rw_dir   192.168.10.20(rw,sync,no_subtree_check)
