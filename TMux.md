@@ -30,6 +30,12 @@
 ```
 set-option -g default-shell /usr/bin/fish
 ```
+to make fish permanently active add followings to `~/.tmux.conf`:
+```
+set -g default-command /path/to/your/fish/
+set -g default-shell /path/to/your/fish/
+```
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
