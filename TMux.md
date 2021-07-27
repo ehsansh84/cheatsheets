@@ -25,5 +25,11 @@
 | w                 | Switch between tabs (choose)  |
 |                  |   |
 
+
+### Enable fish inside Tmux:
+```
+set-option -g default-shell /usr/bin/fish
+```
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
