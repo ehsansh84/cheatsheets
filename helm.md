@@ -43,6 +43,19 @@ helm search repo partial_name
 helm install name directory
 ```
 
+### Uninstall helm chart:
+```
+helm uninstall name
+```
+
+### Install helm chart with params:
+```
+helm install name directory --set param1=value1, param2=value2
+```
+
+
+
+
 
 
 Email: Ehsan.Shirzadi@Gmail.com
