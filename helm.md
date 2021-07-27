@@ -5,7 +5,6 @@
 sudo snap install helm --classic
 ```
 
-
 ### Install helm from apt:
 ```
 curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
@@ -17,41 +16,22 @@ sudo apt-get install helm
 ### To search for helm repositories click on:
 https://artifacthub.io/
 
-### See list of repos:
-```
-helm repo list
-```
-
-### Add a new repo:
-```
-helm repo add name url
-```
 
 
-### Update repos:
-```
-helm repo update
-```
+| Command          | Description                         |
+| ---------------- |:-----------------------------------:|
+| `helm repo list` | List of repos |
+| `helm repo add name url` | Add a new repo |
+| `helm repo update` | Update repos |
+| `helm search repo partial_name` | Search for repos |
+| `helm install name directory` | Install helm chart |
+| `helm uninstall name` | Uninstall helm chart |
+| `helm install name directory --set param1=value1, param2=value2` | Install helm chart with params |
+| `helm upgrade name directory --set param1=value1` | Update params (Other params will reset) |
+| `helm upgrade name directory --set param1=value1 --reuse-values` | Update params (Other params will not reset) |
+|  |  |
 
-### Search for repos:
-```
-helm search repo partial_name
-```
 
-### Install helm chart:
-```
-helm install name directory
-```
-
-### Uninstall helm chart:
-```
-helm uninstall name
-```
-
-### Install helm chart with params:
-```
-helm install name directory --set param1=value1, param2=value2
-```
 
 
 
