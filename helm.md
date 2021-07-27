@@ -26,10 +26,13 @@ https://artifacthub.io/
 | `helm search repo partial_name` | Search for repos |
 | `helm install name directory` | Install helm chart |
 | `helm uninstall name` | Uninstall helm chart |
+| `helm uninstall name --keep-history` | Uninstall helm chart but keeps history |
 | `helm install name directory --set param1=value1, param2=value2` | Install helm chart with params |
 | `helm upgrade name directory --set param1=value1` | Update params (Other params will reset) |
 | `helm upgrade name directory --set param1=value1 --reuse-values` | Update params (Other params will not reset) |
+| `helm get notes name` | View notes inside chart |
 |  |  |
+
 
 
 
