@@ -36,6 +36,16 @@ https://artifacthub.io/
 
 
 
+| Command          | Description                         |
+| ---------------- |:-----------------------------------:|
+| `{{ .Values.image.name }}` | Replace from values.yml image.name  |
+| `{{ .Values.some_value -}}` | Replace and remove all spaces from right |
+| `{{- .Values.some_value }}` | Replace and remove all spaces from left |
+| `{{ .Values.some_value \| indent 12 }}` | Create 12 indents before value  |
+| `{{ .Values.some_value \| nindent 12 }}` | Create a new line and 12 indents before value  |
+|  |  |
+
+
 
 
 
