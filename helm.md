@@ -19,7 +19,7 @@ https://artifacthub.io/
 
 
 | Command          | Description                         |
-| ---------------- |:-----------------------------------:|
+| ---------------- |:-----------------------------------|
 | `helm repo list` | List of repos |
 | `helm repo add name url` | Add a new repo |
 | `helm repo update` | Update repos |
@@ -37,7 +37,7 @@ https://artifacthub.io/
 
 
 | Command          | Description                         |
-| ---------------- |:-----------------------------------:|
+| ---------------- |:-----------------------------------|
 | `{{ .Values.image.name }}` | Replace from values.yml image.name  |
 | `{{ .Values.some_value -}}` | Replace and remove all spaces from right |
 | `{{- .Values.some_value }}` | Replace and remove all spaces from left |
