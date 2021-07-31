@@ -31,6 +31,7 @@ https://artifacthub.io/
 | `helm upgrade name directory --set param1=value1` | Update params (Other params will reset) |
 | `helm upgrade name directory --set param1=value1 --reuse-values` | Update params (Other params will not reset) |
 | `helm get notes name` | View notes inside chart |
+| `helm lint directory` | Check the syntax |
 |  |  |
 
 
