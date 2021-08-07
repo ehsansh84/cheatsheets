@@ -27,6 +27,16 @@ git checkout master
 git merge dev
 ```
 
+### How to clear commit history for main branch:
+```
+git checkout --orphan latest_branch
+git add -A
+git commit -am "commit message"
+git branch -D main
+git branch -m main
+git push -f origin main
+```
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
