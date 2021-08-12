@@ -85,6 +85,10 @@ vim /etc/systemd/resolved.conf
 systemctl restart systemd-resolved
 ```
 
+Fix missing VPN client
+```
+sudo apt install network-manager-pptp-gnome
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
