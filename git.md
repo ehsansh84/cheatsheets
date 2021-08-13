@@ -46,6 +46,11 @@ git remote show origin
 git fetch
 ```
 
+### Shows the log in form of graph one line percommit:
+```
+git log --graph --oneline --all
+```
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
