@@ -37,6 +37,15 @@ git branch -m main
 git push -f origin main
 ```
 
+### Shows wether remote and origin synced :
+```
+git remote show origin
+```
+### To sync data between remote and local:
+```
+git fetch
+```
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
