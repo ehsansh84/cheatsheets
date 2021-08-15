@@ -22,7 +22,23 @@ Press `#` and it will add a comment to the first line. Then press `ECS` and wait
 vim /etc/vim/vimrc.local
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-
+### Install vim plugin:
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+Then you can edit `~/.vimrc` like this:
+```
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/plugin1'
+Plug 'https://github.com/plugin2'
+call plug#end()
+```
+Finally install plugins:
+```
+:PlugInstall
+```
+For more information: https://github.com/junegunn/vim-plug
 
 
 
