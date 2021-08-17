@@ -50,7 +50,14 @@ git fetch
 ```
 git log --graph --oneline --all
 ```
-
+### To delete a remote branch:
+```
+git push --delete origin branch_name
+```
+### To delete a local branch:
+```
+git branch -d branch_name
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
