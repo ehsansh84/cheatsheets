@@ -58,6 +58,7 @@ git push --delete origin branch_name
 ```
 git branch -d branch_name
 ```
+### To close an issue in a commit use `Closes #1` in commit message. 1 is issue number
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
