@@ -48,3 +48,15 @@ docker rmi old:name
 
 ## Set timezone in Dockerfile
 ENV TZ="Africa/Lusaka"
+
+### To set proxy:
+```
+mkdir -p ~/.config/systemd/user/docker.service.d
+vim ~/.config/systemd/user/docker.service.d/http-proxy.conf
+```
+The put these lines into the files:
+```
+[Service]
+Environment="HTTP_PROXY=http://xxx.xxx.xxx.xxx:3128"
+Environment="HTTPS_PROXY=http://xxx.xxx.xxx.xxx:3128"
+```
