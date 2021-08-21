@@ -60,3 +60,7 @@ The put these lines into the files:
 Environment="HTTP_PROXY=http://xxx.xxx.xxx.xxx:3128"
 Environment="HTTPS_PROXY=http://xxx.xxx.xxx.xxx:3128"
 ```
+Finally:
+```
+sudo service docker restart
+```
