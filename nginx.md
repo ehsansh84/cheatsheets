@@ -25,17 +25,17 @@ server {
 ### Config a load balancer:
 ```
 upstream test{
-    server x.x.x.1:30008 max_fails=3 fail_timeout=30s;
-    server x.x.x.2:30008 max_fails=3 fail_timeout=30s;
+    server x.x.x.x:30008 max_fails=3 fail_timeout=30s;
+    server x.x.x.x:30008 max_fails=3 fail_timeout=30s;
 }
-
 
 server {
-    proxy_pass http://test;
     listen       80;
-    server_name  domain.co www.domain.co;
+    server_name  domain.com;
+    location / {
+        proxy_pass http://test;
+    }
 }
-
 ```
 
 ### Config to use reverse proxy:
