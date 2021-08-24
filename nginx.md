@@ -1,4 +1,4 @@
-# Docker cheatsheet by Ehsan Shirzadi
+# Nginx cheatsheet by Ehsan Shirzadi
 
 ### Some usefull commands:
 Reload configurations: `nginx -s reload`
