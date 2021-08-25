@@ -72,6 +72,10 @@ export kubever=$(kubectl version | base64 | tr -d '\n')
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
 ```
 
+### Get upload certs:
+```
+kubeadm init phase upload-certs --experimental-upload-certs
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
