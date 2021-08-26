@@ -89,6 +89,10 @@ Fix missing VPN client
 ```
 sudo apt install network-manager-pptp-gnome
 ```
+Find all sockets on your system:
+```
+sudo find / -type s
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
