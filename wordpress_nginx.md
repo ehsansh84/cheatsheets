@@ -20,6 +20,7 @@ find . -type d -exec chmod 755 {} \;
 location /wordpress {
         index  index.php;
         try_files $uri $uri/ /wordpress/index.php?q=$request_uri;
+        #try_files $uri /index.php?$args;
     }
 ```
 #### Add this for php support:
