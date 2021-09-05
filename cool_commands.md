@@ -102,6 +102,10 @@ Unset env variables:
 ```
 unset GNUPLOT_DRIVER_DIR
 ```
+Check for your public IP:
+```
+wget -qO - icanhazip.com
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
