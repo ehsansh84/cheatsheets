@@ -1,11 +1,18 @@
 # TMux cheatsheet by Ehsan Shirzadi
 
 ### Terminal commands:
-
-| Command          | Description                         |
-| ---------------- |:-----------------------------------:|
-| tmux new -s name | A news session with the name 'name' |
-| tmux rename-window -t number newname | Rename a pane |
+#### Kill a tmux session:
+```
+tmux kill-session -t ostechnix
+```
+#### A news session with the name 'name'
+```
+tmux new -s name
+```
+#### Rename a pane:
+```
+tmux rename-window -t number newname
+```
 
 ### In TMux press ctrl+b+ one of these characters:
 
@@ -23,7 +30,7 @@
 | ,                 | Rename current tab  |
 | 0..9                 | Switch between tabs  |
 | w                 | Switch between tabs (choose)  |
-|                  |   |
+| &                 | kill current window  |
 
 
 ### Enable fish inside Tmux:
