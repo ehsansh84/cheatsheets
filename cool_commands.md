@@ -106,6 +106,18 @@ Check for your public IP:
 ```
 wget -qO - icanhazip.com
 ```
+
+### Run a python script as a linux command:
+Put a shebang `#! /usr/bin/python` on top of script
+Then make in executable:
+```
+sudo chmod +x script.py
+```
+Put it inside `/usr/bin`
+Remove `.py` so `script.py` will be `script`
+Run!
+
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
