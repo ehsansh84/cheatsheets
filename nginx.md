@@ -9,7 +9,7 @@ Test configurations: `nginx -t`
 server {
     listen       80;
     listen  [::]:80;
-    server_name  domain.co www.domain.co;
+    server_name  -;
     return 301 https://$host$request_uri;
 }
 
