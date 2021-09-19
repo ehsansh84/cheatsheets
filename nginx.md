@@ -20,8 +20,22 @@ server {
     ssl_certificate     /etc/letsencrypt/live/domain.co/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/domain.co/privkey.pem;
 }
+```
+### Config multiple server blocks with the same SSL certificate:
+```
+ssl_certificate     /etc/letsencrypt/live/domain.co/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/domain.co/privkey.pem;
+
+server {
+    listen       443 ssl;
+}
+
+server {
+    listen       443 ssl;
+}
 
 ```
+
 ### Config a load balancer:
 ```
 upstream test{
