@@ -64,3 +64,18 @@ Finally:
 ```
 sudo service docker restart
 ```
+### Set cron inside docker contianer:
+Create your '/cronfile' like this:
+```
+* * * * *  echo "Hello!" >> /var/log/hello.log 2>&1
+```
+Inside docker file you may need to install cron depending on your OS:
+```
+RUN apt update && apt install -y cron
+```
+Put this line after copying your files into the container:
+```
+RUN crontab /crontab
+```
+Finally you must run  cron using CMD `CMD cron` Or in case of having another CMD like this: `cron && python boot.py`
+```
