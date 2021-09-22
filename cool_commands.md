@@ -117,6 +117,10 @@ Put it inside `/usr/bin`
 Remove `.py` so `script.py` will be `script`
 Run!
 
+### Remove a virtual network interface:
+```
+sudo ip link delete interface_name
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
