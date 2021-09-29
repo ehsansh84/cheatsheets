@@ -122,6 +122,10 @@ Run!
 sudo ip link delete interface_name
 ```
 
+### Find a directory:
+```
+find / -name DIRNAME -type d
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
