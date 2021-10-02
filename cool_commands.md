@@ -26,6 +26,9 @@ echo $'\033]30;NewName\007'
 List all files but *conf
 ### ls -I "*conf"
 
+List all dirs
+### ls -d */
+
 list all files containing my_text
 ###grep -iRl "my_text" *
 
