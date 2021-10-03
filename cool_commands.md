@@ -133,6 +133,10 @@ find / -name DIRNAME -type d
 ```
 tcpdump -i <interface-name> port <port-number>
 ```
+### Check traffics on the port a few exclusions:
+```
+tcpdump -i <interface-name> port <port-number> -n port not 22 and not arp and port not 53
+```
 
 
 
