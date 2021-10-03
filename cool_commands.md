@@ -129,6 +129,13 @@ sudo ip link delete interface_name
 ```
 find / -name DIRNAME -type d
 ```
+### Check traffics on the port:
+```
+tcpdump -i <interface-name> port <port-number>
+```
+
+
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
