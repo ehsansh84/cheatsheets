@@ -137,8 +137,10 @@ tcpdump -i <interface-name> port <port-number>
 ```
 tcpdump -i <interface-name> port <port-number> -n port not 22 and not arp and port not 53
 ```
-
-
+### Check traffics on the port 443:
+```
+tcpdump -i ens3 port 443
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
