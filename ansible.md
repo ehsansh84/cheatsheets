@@ -17,7 +17,6 @@ sudo apt-get install ansible
 More information for other linux distros can be found here:
 https://docs.ansible.com/ansible/2.4/intro_installation.html
 
-
 ### Step2: Add your host to Ansible hosts:
 ```
 vim /etc/ansible/hosts
@@ -29,7 +28,6 @@ Add this to the file (I assume your client's IP is:192.168.10.20)
 ```
 
 ### Step3: Copy your server public key on your clients (I assume your client's user is ubuntu)
-
 If you didn't generate an ssh-key before try to run this command:
 ```
 ssh-keygen

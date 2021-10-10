@@ -1,4 +1,4 @@
-
+# Issuing SSL Certificates using certbot by Ehsan Shirzadi
 get certificate:
 ```
 certbot certonly -d domain —expand -d www.domain.com
@@ -37,4 +37,4 @@ sudo docker run -it --rm --name certbot -v "/volumes/certbot/letsencrypt:/etc/le
 ```
 
 Create a DNS record with type of Text. set the key and value.
-Then proceed in cert bot. Thats it!
+Then proceed in cert bot. That's it!
