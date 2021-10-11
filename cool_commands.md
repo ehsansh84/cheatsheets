@@ -141,6 +141,13 @@ tcpdump -i <interface-name> port <port-number> -n port not 22 and not arp and po
 ```
 tcpdump -i ens3 port 443
 ```
+### Color specific word in output (| is necessary):
+```
+command | grep --color -P "word|"
+```
+
+
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
