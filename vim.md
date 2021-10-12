@@ -38,6 +38,11 @@ Finally install plugins:
 ```
 :PlugInstall
 ```
+
+### Write a read only file:
+```
+:w !sudo tee %
+```
 For more information: https://github.com/junegunn/vim-plug
 
 
