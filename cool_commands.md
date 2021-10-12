@@ -145,9 +145,11 @@ tcpdump -i ens3 port 443
 ```
 command | grep --color -P "word|"
 ```
-
-
-
+### Add user to sudoers:
+Edit this file: `/etc/sudoers` and add this line to the end of file:
+```
+ubuntu  ALL=(ALL) ALL
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
