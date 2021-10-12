@@ -148,7 +148,7 @@ command | grep --color -P "word|"
 ### Add user to sudoers:
 Edit this file: `/etc/sudoers` and add this line to the end of file:
 ```
-ubuntu  ALL=(ALL) ALL
+username  ALL=(ALL) NOPASSWD:ALL
 ```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
