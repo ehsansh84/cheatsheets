@@ -17,6 +17,14 @@ sudo apt-get install helm
 https://artifacthub.io/
 
 
+### Package and push helm to repository (Go inside helm directory):
+```
+export HELM_EXPERIMENTAL_OCI=1
+helm package .
+helm registry login harbor.domain.com -u admin
+helm push package_name.tgz oci://mycontainerregistry.domain.com/helm
+```
+
 
 | Command          | Description                         |
 | ---------------- |:-----------------------------------|
