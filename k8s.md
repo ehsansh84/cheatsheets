@@ -77,5 +77,10 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
 kubeadm init phase upload-certs --experimental-upload-certs
 ```
 
+### In case you want to have access to your cluster though a domain, you can allow it like this:
+```
+kubeadm init --apiserver-cert-extra-sans ha.doomain.ir
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
