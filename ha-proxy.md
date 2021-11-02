@@ -31,6 +31,12 @@ backend kubernetes-backend
 systemctl restart haproxy
 ```
 
+### Check config:
+```
+haproxy -c -V -f /etc/haproxy/haproxy.cfg
+```
+
+haproxy -c -V -f /etc/haproxy/haproxy.cfg
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
