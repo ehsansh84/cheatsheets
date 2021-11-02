@@ -151,6 +151,14 @@ Edit this file: `/etc/sudoers` and add this line to the end of file:
 username  ALL=(ALL) NOPASSWD:ALL
 ```
 
+### Set default ssh port for specific host: `~/.ssh/config`
+```
+Host git.greenrnd.com
+    User git
+    Hostname git.greenrnd.com
+    Port 2580
+```
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
