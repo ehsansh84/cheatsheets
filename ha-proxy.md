@@ -35,8 +35,26 @@ systemctl restart haproxy
 ```
 haproxy -c -V -f /etc/haproxy/haproxy.cfg
 ```
+### TCP Proxy port 80 and 443
+```
+frontend www-http
+   bind *:80
+   mode tcp
+   default_backend www-backend
 
-haproxy -c -V -f /etc/haproxy/haproxy.cfg
+frontend www-https
+   bind *:443
+   mode tcp
+   default_backend www-backend_https
+
+backend www-backend
+    server master1 x.x.x.x:30241 check
+    server master2 x.x.x.x:30241 check
+
+backend www-backend_https
+    server master1 x.x.x.x:30925 check
+    server master2 x.x.x.x:30925 check
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
