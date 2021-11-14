@@ -16,7 +16,7 @@ kubectl exec -it pod_name -c container_name --  bash
 ```
 ### Create a tls secret:
 ```
-kubectl create secret tls my-tls-secret --cert=path/to/cert/file --key=path/to/key/file 
+kubectl create secret tls my-secret-name --cert=path/to/cert/file --key=path/to/key/file 
 ```
 
 
