@@ -79,3 +79,8 @@ RUN crontab /crontab
 ```
 Finally you must run  cron using CMD `CMD cron` Or in case of having another CMD like this: `cron && python boot.py`
 ```
+  
+### Copy file from/to container
+```
+docker cp <containerId>:/file/path/within/container /host/path/target
+```
