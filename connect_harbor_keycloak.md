@@ -14,6 +14,7 @@ In harbor:
 - goto: `Administration/Configuration/Authentication`
 - Auth mode: `OIDC`
 - OIDC Provider Name: `keycloak.domain.com`
+- OIDC Endpoint: 
 - OIDC Client ID: `harbor`
 - OIDC Client Secret: 
 - Group Claim Name:
