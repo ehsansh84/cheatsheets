@@ -18,6 +18,10 @@ kubectl exec -it pod_name -c container_name --  bash
 ```
 kubectl create secret tls my-secret-name --cert=path/to/cert/file --key=path/to/key/file 
 ```
+### Read last 10 logs:
+```
+kubectl logs --tail=20 nginx
+```
 
 
 Email: Ehsan.Shirzadi@Gmail.com
