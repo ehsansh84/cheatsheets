@@ -159,6 +159,10 @@ Host git.greenrnd.com
     Port 2580
 ```
 
+### How much disk is used by journalctl
+```
+journalctl --disk-usage
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
