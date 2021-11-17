@@ -45,6 +45,7 @@ Finally install plugins:
 ```
 For more information: https://github.com/junegunn/vim-plug
 
+###  Press `D` to delete characters from cursor to the end of line
 
 
 
