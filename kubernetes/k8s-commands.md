@@ -22,6 +22,10 @@ kubectl create secret tls my-secret-name --cert=path/to/cert/file --key=path/to/
 ```
 kubectl logs --tail=20 nginx
 ```
+### Port forwarding:
+```
+kubectl port-forward pod_name local_port:pod_port
+```
 
 
 Email: Ehsan.Shirzadi@Gmail.com
