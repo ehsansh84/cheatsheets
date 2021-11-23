@@ -163,6 +163,26 @@ Host git.greenrnd.com
 ```
 journalctl --disk-usage
 ```
+
+### How to increase your swap size?
+```
+SWAP_PATH=/root/swap.swp
+swapoff -a
+dd if=/dev/zero of=$SWAP_PATH bs=1M count=16384 #count=1024*16=16GBi
+chmod 600 $SWAP_PATH
+mkswap $SWAP_PATH
+swapon $SWAP_PATH
+```
+Finally edit `/etc/fstab` and comment current swap file:
+```
+/swapfile                                 none            swap    sw              0       0
+```
+and add this line:
+```
+/root/swap.swp             swap        swap         defaults                0       0
+```
+
+
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
 
