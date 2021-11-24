@@ -182,7 +182,9 @@ and add this line:
 /root/swap.swp             swap        swap         defaults                0       0
 ```
 
-
+### How to see SSL certificate details:
+```
+echo | openssl s_client -showcerts -servername gnupg.org -connect gnupg.org:443 2>/dev/null | openssl x509 -inform pem -noout -text
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
-
