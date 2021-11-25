@@ -173,7 +173,7 @@ chmod 600 $SWAP_PATH
 mkswap $SWAP_PATH
 swapon $SWAP_PATH
 ```
-Finally edit `/etc/fstab` and comment current swap file:
+Finally, edit `/etc/fstab` and comment current swap file:
 ```
 /swapfile                                 none            swap    sw              0       0
 ```
