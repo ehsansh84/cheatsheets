@@ -1,6 +1,7 @@
 # Networking cheatsheet by Ehsan Shirzadi
 
 ### NAT private networok to internet(Public):
+This code must executed on HA on the node acting as a gateway
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -t nat -A POSTROUTING -o public_interface -j MASQUERADE
