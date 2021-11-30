@@ -62,6 +62,11 @@ Tunnel network traffic:
 ```
 sudo sshuttle --dns -vvr root@x.x.x.x 0/0
 ```
+If encountered with the error `fatal: server died with error code 255` run this command instead:
+```
+sudo sshuttle --dns -vvr root@x.x.x.x[:443] --exclude root@x.x.x.x 0/0
+```
+
 Hard disk performance test:
 ```
 fio --loops=5 --size=1024m --filename=/mnt/nfs/test12.txt --stonewall --ioengine=libaio --direct=1 \
