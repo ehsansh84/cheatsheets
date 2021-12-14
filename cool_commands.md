@@ -62,6 +62,11 @@ Tunnel network traffic:
 ```
 sudo sshuttle --dns -vvr root@x.x.x.x 0/0
 ```
+If encountered with the error `fatal: server died with error code 255` run this command instead:
+```
+sudo sshuttle --dns -vvr root@x.x.x.x[:443] --exclude root@x.x.x.x 0/0
+```
+
 Hard disk performance test:
 ```
 fio --loops=5 --size=1024m --filename=/mnt/nfs/test12.txt --stonewall --ioengine=libaio --direct=1 \
@@ -159,6 +164,36 @@ Host git.greenrnd.com
     Port 2580
 ```
 
+### How much disk is used by journalctl
+```
+journalctl --disk-usage
+```
+
+### How to increase your swap size?
+```
+SWAP_PATH=/root/swap.swp
+swapoff -a
+dd if=/dev/zero of=$SWAP_PATH bs=1M count=16384 #count=1024*16=16GBi
+chmod 600 $SWAP_PATH
+mkswap $SWAP_PATH
+swapon $SWAP_PATH
+```
+Finally, edit `/etc/fstab` and comment current swap file:
+```
+/swapfile                                 none            swap    sw              0       0
+```
+and add this line:
+```
+/root/swap.swp             swap        swap         defaults                0       0
+```
+
+### How to see SSL certificate details:
+```
+echo | openssl s_client -showcerts -servername gnupg.org -connect gnupg.org:443 2>/dev/null | openssl x509 -inform pem -noout -text
+```
+### List all partitions
+```
+sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
-

@@ -43,6 +43,14 @@ set -g default-command /usr/bin/fish/
 set -g default-shell /usr/bin/fish/
 ```
 
+### Enable synchronize panes:
+```
+:set synchronize-panes
+```
+### Disable synchronize panes:
+```
+:set synchronize-panes off
+```
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com

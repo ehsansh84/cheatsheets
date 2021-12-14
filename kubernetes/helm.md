@@ -54,11 +54,13 @@ helm push package_name.tgz oci://mycontainerregistry.domain.com/helm
 |  |  |
 
 
-
-
-
-
-
+### Keep a resource after helm uninstall:
+```yaml
+kind: Secret
+metadata:
+  annotations:
+    "helm.sh/resource-policy": keep
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com

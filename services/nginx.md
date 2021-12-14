@@ -51,6 +51,29 @@ server {
     }
 }
 ```
+### Config a tcp load balancer
+```
+stream {
+    server {
+        listen     80 tcp;
+        proxy_pass www80;
+    }
+    server {
+        listen     443 tcp;
+        proxy_pass www443;
+    }
+    upstream www80 {
+        server x.x.x.1:32080 max_fails=3 fail_timeout=30s;
+        server x.x.x.2:32080 max_fails=3 fail_timeout=30s;
+        server x.x.x.3:32080 max_fails=3 fail_timeout=30s;
+    }
+    upstream www443 {
+        server x.x.x.1:32443 max_fails=3 fail_timeout=30s;
+        server x.x.x.2:32443 max_fails=3 fail_timeout=30s;
+        server x.x.x.3:32443 max_fails=3 fail_timeout=30s;
+    }    
+}
+```
 
 ### Config to use reverse proxy:
 ```
