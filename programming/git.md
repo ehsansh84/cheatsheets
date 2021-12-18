@@ -58,6 +58,10 @@ git push --delete origin branch_name
 ```
 git branch -d branch_name
 ```
+### To change the latest commit message:
+```commandline
+git commit --amend -m "New commit message."
+```
 ### To close an issue in a commit use `Closes #1` in commit message. 1 is issue number
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
