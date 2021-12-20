@@ -26,7 +26,11 @@ kubectl logs --tail=20 nginx
 ```
 kubectl port-forward pod_name local_port:pod_port
 ```
-
+### Create secret for TLS:
+```commandline
+kubectl create secret tls my-tls-secret --cert=fullchain.pem --key=priv.pem
+```
+ 
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
