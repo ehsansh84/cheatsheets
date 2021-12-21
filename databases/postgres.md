@@ -5,5 +5,11 @@
 dropdb keycloak --force;
 ```
 
+### Install only postgres client:
+```
+sudo apt-get install postgresql-client
+psql
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
