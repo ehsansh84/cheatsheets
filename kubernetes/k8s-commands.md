@@ -30,7 +30,11 @@ kubectl port-forward pod_name local_port:pod_port
 ```commandline
 kubectl create secret tls my-tls-secret --cert=fullchain.pem --key=priv.pem
 ```
- 
+### Force delete all pods:
+```commandline
+kubectl delete -n argocd po --grace-period=0 --force --all
+```
+
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
