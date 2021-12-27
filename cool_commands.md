@@ -195,5 +195,9 @@ echo | openssl s_client -showcerts -servername gnupg.org -connect gnupg.org:443 
 ```
 sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 ```
+### Filter output by multiple keywords:
+```
+ls | egrep "(kw1|kw2)"
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
