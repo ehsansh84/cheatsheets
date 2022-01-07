@@ -19,6 +19,11 @@ ffmpeg -i input.mp4 -vf scale=-1:720 -vcodec libx265 output.mp4
 ```
 ffmpeg -i source-file.foo -ss 0 -t 60 first-1-min.m4v
 ```
+### Put watermark on a video x:y:
+```
+ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=100:300" output.mp4
+```
+
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
