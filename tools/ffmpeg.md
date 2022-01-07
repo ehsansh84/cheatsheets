@@ -23,7 +23,12 @@ ffmpeg -i source-file.foo -ss 0 -t 60 first-1-min.m4v
 ```
 ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=100:300" output.mp4
 ```
-
+### Put watermark on a video bottom right:
+```
+ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=main_w-overlay_w:main_h-overlay_h" output.mp4
+# or
+ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=W-w:H-h" output.mp4
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
