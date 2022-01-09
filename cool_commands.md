@@ -64,7 +64,7 @@ sudo sshuttle --dns -vvr root@x.x.x.x 0/0
 ```
 If encountered with the error `fatal: server died with error code 255` run this command instead:
 ```
-sudo sshuttle --dns -vvr root@x.x.x.x[:443] --exclude root@x.x.x.x 0/0
+sudo sshuttle --dns -vvr root@x.x.x.x[:443] --exclude x.x.x.x 0/0
 ```
 
 Hard disk performance test:
