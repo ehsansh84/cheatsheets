@@ -87,6 +87,8 @@ kubeadm init --apiserver-cert-extra-sans ha.doomain.ir
 apiVersion: kubeadm.k8s.io/v1beta2
 kind: ClusterConfiguration
 imageRepository: "registry.myrepo.com/kubernetes" 
+kubernetesVersion: v1.22.1
+controlPlaneEndpoint: xxx.xxx.xxx.xxx:6443
 ```
 then specify like this:
 ```
