@@ -90,7 +90,7 @@ imageRepository: "registry.myrepo.com/kubernetes"
 ```
 then specify like this:
 ```
-kubeadm init -config config.yaml
+kubeadm init --config config.yaml
 ```
 
 Email: Ehsan.Shirzadi@Gmail.com
