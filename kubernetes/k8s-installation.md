@@ -82,5 +82,16 @@ kubeadm init phase upload-certs --experimental-upload-certs
 kubeadm init --apiserver-cert-extra-sans ha.doomain.ir
 ```
 
+### In case you want to pull images from another repository create `config.yaml`
+```yaml
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: ClusterConfiguration
+imageRepository: "registry.myrepo.com/kubernetes" 
+```
+then specify like this:
+```
+kubeadm init -config config.yaml
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
