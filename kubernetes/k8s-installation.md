@@ -93,5 +93,9 @@ then specify like this:
 kubeadm init --config config.yaml
 ```
 
+### Only pull kubernetes images:
+```
+kubeadm config images pull
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
