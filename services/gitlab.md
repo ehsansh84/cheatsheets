@@ -15,6 +15,18 @@ user.save!
 ```
 More info here: https://docs.gitlab.com/ce/security/reset_user_password.html#reset-your-root-password
 
+If you change ssh port for gitlab, you will get this error when trying to clone from ssh:
+```
+ssh: connect to host git.greenrnd.com port 22: Connection refused
+```
+Solve this error by creating a file in your local pc `~/.ssh/config` and add:
+```
+Host git.domain.com
+    User git
+    Hostname git.domain.com
+    Port 2580
+```
+
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
