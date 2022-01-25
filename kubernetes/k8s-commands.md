@@ -37,6 +37,9 @@ kubectl delete -n argocd po --grace-period=0 --force --all
 ```commandline
 kubectl config view --flatten > kube.config
 ```
-
+### Taint a node:
+```
+kubectl taint nodes node1 storage-node=true:NoSchedule
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
