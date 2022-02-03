@@ -51,6 +51,11 @@ set -g default-shell /usr/bin/fish/
 ```
 :set synchronize-panes off
 ```
+### Assign ctrl+s to command synchronize-panes:
+```
+bind -n C-s set-window-option <synchronize-panes>
+```
+
 
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
