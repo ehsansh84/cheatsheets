@@ -1,5 +1,10 @@
 # Postgresql cheatsheet by Ehsan Shirzadi
-
+### Commands:
+```
+\l # List databases
+\c db_name # connect to a database
+\td # List tables
+```
 ### Drop database force:
 ```
 dropdb keycloak --force;
