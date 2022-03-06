@@ -4,7 +4,9 @@
 \l # List databases
 \df # List functions
 \df+ # List functions and source code
-\df <schema>.* # List functions
+\df # List functions
+\dy+ # List triggers and source code
+\dy <schema>.* # List triggers
 \c db_name # connect to a database
 \td # List tables
 ```
