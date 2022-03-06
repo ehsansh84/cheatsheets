@@ -36,6 +36,13 @@ create user user_name with encrypted password 'password';
 ```
 grant all privileges on database db_name to user_name;
 ```
+### List of all tables:
+```
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public'
+ORDER BY table_name;
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
