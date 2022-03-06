@@ -2,6 +2,8 @@
 ### Commands:
 ```
 \l # List databases
+\df # List functions
+\df+ # List functions and source code
 \df <schema>.* # List functions
 \c db_name # connect to a database
 \td # List tables
