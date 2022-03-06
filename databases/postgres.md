@@ -43,6 +43,10 @@ FROM information_schema.tables
 WHERE table_schema = 'public'
 ORDER BY table_name;
 ```
+### List of all triggers:
+```
+SELECT  * FROM information_schema.triggers;
+```
 
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
