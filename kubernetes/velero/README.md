@@ -27,8 +27,3 @@ velero install \
  --use-restic
 ```
 
-### Step 3: Go to rook directory:
-```commandline
-kubectl --n rook-ceph apply -f cluster/examples/kubernetes/ceph/cluster.yaml
-kubectl --n rook-ceph apply -f cluster/examples/kubernetes/ceph/csi/rbd/storageclass.yaml
-```
