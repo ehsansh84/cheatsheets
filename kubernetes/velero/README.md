@@ -26,4 +26,7 @@ velero install \
  --snapshot-location-config region="default" \
  --use-restic
 ```
-
+### Step 4: Perform a namespace backup
+```
+velero backup create backup_name --include-namespaces namespace_name
+```
