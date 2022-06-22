@@ -30,3 +30,13 @@ velero install \
 ```
 velero backup create backup_name --include-namespaces namespace_name
 ```
+
+# How to restore backups?
+### Get the list of backups:
+```
+velero backup get
+```
+Restore backup:
+```
+velero restore create --from-backup backup_name
+```
