@@ -24,8 +24,9 @@ kind create cluster # using default name
 kind create cluster --name cluster_name # specifying name
 ```
 
-### :
+### Delete a cluster:
 ```
+kind delete cluster –name <cluster name>
 ```
 
 
