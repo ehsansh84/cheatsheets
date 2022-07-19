@@ -6,7 +6,7 @@ If Whoops then:
 ```
 sudo rm -rf ~/.config/nordvpn
 ```
-the reboot system
+reboot system
 ```
 nordvpn whitelist add port 8282 22 8585
 ```
