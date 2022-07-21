@@ -60,6 +60,15 @@ Put this code into the file:
 ```
 ansible-playbook hello.yml
 ```
+And you can paas extra vars:
+```
+ansible-playbook hello.yml --extra-vars "var1=val1 var2=val2"
+```
+And you can pass inventory (trailing comma is neccesarry):
+```
+ansible-playbook hello.yml -i user@x.x.x.x,
+```
+
 
 ### Uncomment this line in `/etc/ansible/ansible.cfg` to disable ssh host key checking
 ```
