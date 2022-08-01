@@ -84,3 +84,8 @@ Finally you must run  cron using CMD `CMD cron` Or in case of having another CMD
 ```
 docker cp <containerId>:/file/path/within/container /host/path/target
 ```
+
+### Remove all images with `<none>` tag:
+```
+docker rmi $(docker images --filter dangling=true -aq)
+```
