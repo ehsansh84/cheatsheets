@@ -62,5 +62,10 @@ metadata:
     "helm.sh/resource-policy": keep
 ```
 
+### Save values from a running helm:
+```commandline
+helm show values helm_name 
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
