@@ -203,5 +203,9 @@ ls | egrep "(kw1|kw2)"
 ```
 rm -rf /home/ubuntu/.configrc/*
 ```
+### Change ssh port from 22 to 2580, remove -i if you want changed not applied
+```
+sed -i 's/Port 22/Port 2580/g' sshd_config
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
