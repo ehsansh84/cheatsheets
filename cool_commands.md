@@ -199,5 +199,9 @@ sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 ```
 ls | egrep "(kw1|kw2)"
 ```
+### See list of connections to current server:
+```
+rm -rf /home/ubuntu/.configrc/*
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com
