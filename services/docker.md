@@ -89,3 +89,17 @@ docker cp <containerId>:/file/path/within/container /host/path/target
 ```
 docker rmi $(docker images --filter dangling=true -aq)
 ```
+
+### In some cases you need to change docker daemon dns. edit `/etc/docker/daemon.json`:
+```json
+{
+    "dns": 
+    [
+        "8.8.8.8"
+    ]
+}
+```
+ then restart docker :
+```
+sudo systemctl restart docker
+```
