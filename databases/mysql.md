@@ -5,6 +5,11 @@
 apt install mysql-client
 ```
 
+### Connect to mysql instance (consider there is no space after -h -u -p):
+```
+mysql -hHOST_IP --port 30671 -uroot -pPASSWORD
+```
+
 
 
 Email: Ehsan.Shirzadi@Gmail.com

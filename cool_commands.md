@@ -199,5 +199,13 @@ sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 ```
 ls | egrep "(kw1|kw2)"
 ```
+### See list of connections to current server:
+```
+rm -rf /home/ubuntu/.configrc/*
+```
+### Change ssh port from 22 to 2580, remove -i if you want changed not applied
+```
+sed -i 's/#Port 22/Port 2580/g' /etc/ssh/ssh_config
+```
 ###### Email: Ehsan.Shirzadi@Gmail.com
 ###### Web: www.ehsanshirzadi.com

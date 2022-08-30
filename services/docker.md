@@ -78,7 +78,6 @@ Put this line after copying your files into the container:
 RUN crontab /crontab
 ```
 Finally you must run  cron using CMD `CMD cron` Or in case of having another CMD like this: `cron && python boot.py`
-```
   
 ### Copy file from/to container
 ```
@@ -88,4 +87,18 @@ docker cp <containerId>:/file/path/within/container /host/path/target
 ### Remove all images with `<none>` tag:
 ```
 docker rmi $(docker images --filter dangling=true -aq)
+```
+
+### In some cases you need to change docker daemon dns. edit `/etc/docker/daemon.json`:
+```json
+{
+    "dns": 
+    [
+        "8.8.8.8"
+    ]
+}
+```
+ then restart docker :
+```
+sudo systemctl restart docker
 ```
