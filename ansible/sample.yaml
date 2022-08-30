@@ -1,0 +1,6 @@
+- name: A sample ansible playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: "Update apt"
+      shell: "apt update"
