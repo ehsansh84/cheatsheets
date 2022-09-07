@@ -40,3 +40,9 @@ Restore backup:
 ```
 velero restore create --from-backup backup_name
 ```
+
+# How to uninstall Velero?
+```
+kubectl delete namespace/velero clusterrolebinding/velero
+kubectl delete crds -l component=velero
+```
