@@ -8,3 +8,5 @@ v1 = client.CoreV1Api()
 namespaces = [item.metadata.name for item in v1.list_namespace().items]
 print(namespaces)
 
+nodes = [item.metadata.name for item in v1.list_node().items]
+print(nodes)
