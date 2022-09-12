@@ -45,5 +45,18 @@ kubectl taint nodes node1 storage-node=true:NoSchedule
 ```
 kubectl create secret tls secret_name --cert=fullchain.pem --key=private.key -n namespace
 ```
-Email: Ehsan.Shirzadi@Gmail.com
-Web: www.ehsanshirzadi.com
+
+### Clean Up Old Containers and Images
+edit: `/var/lib/kubelet/kubeadm-flags.env` and add:
+```commandline
+KUBELET_KUBEADM_ARGS="--image-gc-high-threshold=60 --image-gc-low-threshold=50"
+```
+After editing the file, restart Kubectl:
+```commandline
+systemctl daemon-reload
+systemctl restart kubelet
+```
+
+
+### References:
+- [How to Clean Up Old Containers and Images in Your Kubernetes Cluster](https://www.howtogeek.com/devops/how-to-clean-up-old-containers-and-images-in-your-kubernetes-cluster/)
