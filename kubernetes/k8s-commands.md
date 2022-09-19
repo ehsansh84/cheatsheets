@@ -56,7 +56,14 @@ After editing the file, restart Kubectl:
 systemctl daemon-reload
 systemctl restart kubelet
 ```
-
+### Set default storage class:
+```
+kubectl patch storageclass storage_class_name -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
+### Unset default storage class:
+```
+kubectl patch storageclass storage_class_name -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+```
 
 ### References:
 - [How to Clean Up Old Containers and Images in Your Kubernetes Cluster](https://www.howtogeek.com/devops/how-to-clean-up-old-containers-and-images-in-your-kubernetes-cluster/)
