@@ -57,4 +57,4 @@ SELECT  * FROM information_schema.triggers;
 ```
 
 ### References:
-- (How to pass in password to pg_dump?)[https://stackoverflow.com/questions/2893954/how-to-pass-in-password-to-pg-dump]
+- [How to pass in password to pg_dump?](https://stackoverflow.com/questions/2893954/how-to-pass-in-password-to-pg-dump)
