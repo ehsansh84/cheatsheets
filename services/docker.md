@@ -102,3 +102,7 @@ docker rmi $(docker images --filter dangling=true -aq)
 ```
 sudo systemctl restart docker
 ```
+### Make a linux docker run forever:
+```
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+```
