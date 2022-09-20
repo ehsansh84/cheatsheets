@@ -28,6 +28,10 @@ psql -h service_name.namespace -p 5432 -U postgres postgres
 ```
 psql -h <host> -p <port> -U <db_user> <database_name>
 ```
+Another way:
+```
+pg_dump -U <user> -h <host_ip> -p <port> <db_name> > backup.sql
+```
 ### Create a user:
 ```
 create user user_name with encrypted password 'password';
