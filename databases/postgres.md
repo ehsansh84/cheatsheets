@@ -32,6 +32,10 @@ Another way:
 ```
 pg_dump -U <user> -h <host_ip> -p <port> <db_name> > backup.sql
 ```
+If you use above commands, a password will be asked, bypass it like this:
+```
+export PGPASSWORD="$put_here_the_password"
+```
 ### Create a user:
 ```
 create user user_name with encrypted password 'password';
@@ -52,5 +56,5 @@ ORDER BY table_name;
 SELECT  * FROM information_schema.triggers;
 ```
 
-Email: Ehsan.Shirzadi@Gmail.com
-Web: www.ehsanshirzadi.com
+### References:
+- (How to pass in password to pg_dump?)[https://stackoverflow.com/questions/2893954/how-to-pass-in-password-to-pg-dump]
