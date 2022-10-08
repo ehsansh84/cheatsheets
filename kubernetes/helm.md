@@ -67,5 +67,10 @@ metadata:
 helm show values helm_name 
 ```
 
+### Helm upgrade specific value
+```
+helm upgrade NAME . --set tag1.tag2=value
+```
+
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
