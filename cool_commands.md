@@ -218,5 +218,7 @@ echo "deb https://mirror.iranserver.com/ubuntu focal-security main restricted un
 ```
 echo http://mirror.arvancloud.com/alpine/v3.16/main > /etc/apk/repositories
 ```
-###### Email: Ehsan.Shirzadi@Gmail.com
-###### Web: www.ehsanshirzadi.com
+### List directories with size
+```
+du -sh *
+```
