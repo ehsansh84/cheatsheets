@@ -106,3 +106,7 @@ sudo systemctl restart docker
 ```
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 ```
+### Connect container to host network:
+```
+--network="host"  
+```
