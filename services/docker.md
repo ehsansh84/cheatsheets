@@ -110,3 +110,7 @@ ENTRYPOINT ["tail", "-f", "/dev/null"]
 ```
 --network="host"  
 ```
+### How to override entry point with `sh` command?
+```  
+docker run -it --entrypoint sh image_name
+```
