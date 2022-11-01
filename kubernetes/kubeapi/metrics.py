@@ -20,6 +20,11 @@ def node_metrics():
             print(stats)
     average_cpu = total_cpu / workers_count
     print(f'Workers count: {workers_count}, Total CPU: {total_cpu} Average CPU: {average_cpu}')
+    if average_cpu > 3:
+        print('Going to scale cluster UP')
 
 
-node_metrics()
+from time import sleep
+while True:
+    node_metrics()
+    sleep(1)
