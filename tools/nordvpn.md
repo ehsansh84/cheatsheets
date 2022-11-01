@@ -14,5 +14,10 @@ Login legacy (No need to open website):
 ```
 nordvpn login --legacy
 ```
+Change protocol:
+```
+nordvpn set protocol TCP
+nordvpn set protocol UDP
+```
 Support recommendations:
 nordvpn whitelist add subnet 192.168.0.0/16

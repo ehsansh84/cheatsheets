@@ -207,5 +207,18 @@ rm -rf /home/ubuntu/.configrc/*
 ```
 sed -i 's/#Port 22/Port 2580/g' /etc/ssh/ssh_config
 ```
-###### Email: Ehsan.Shirzadi@Gmail.com
-###### Web: www.ehsanshirzadi.com
+
+### Added iranserver repos for `Ubuntu 20.04 Focal Fossa`
+```
+echo "deb https://mirror.iranserver.com/ubuntu focal main restricted universe multiverse" | tee -a /etc/apt/sources.list
+echo "deb https://mirror.iranserver.com/ubuntu focal-updates main restricted universe multiverse" | tee -a /etc/apt/sources.list
+echo "deb https://mirror.iranserver.com/ubuntu focal-security main restricted universe multiverse" | tee -a /etc/apt/sources.list
+```
+### Added arvancloud repos for `alpine:3.16`
+```
+echo http://mirror.arvancloud.com/alpine/v3.16/main > /etc/apk/repositories
+```
+### List directories with size
+```
+du -sh *
+```

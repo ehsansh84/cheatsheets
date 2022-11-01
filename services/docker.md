@@ -102,3 +102,15 @@ docker rmi $(docker images --filter dangling=true -aq)
 ```
 sudo systemctl restart docker
 ```
+### Make a linux docker run forever:
+```
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+```
+### Connect container to host network:
+```
+--network="host"  
+```
+### How to override entry point with `sh` command?
+```  
+docker run -it --entrypoint sh image_name
+```

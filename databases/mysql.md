@@ -10,6 +10,15 @@ apt install mysql-client
 mysql -hHOST_IP --port 30671 -uroot -pPASSWORD
 ```
 
+### Backup database:
+```
+mysqldump -hHOST --port 3306 -uUSER -pPASSWORD DATABASE > backup.sql
+mysqldump -hService.Namespace.svc.cluster.local --port 3306 -uUSER -pPASSWORD DATABASE > backup.sql # k8s way
+```
+### Restore database:
+```
+mysql -hHOST --port 3306 -uUSER -pPASSWORD DATABASE < backup.sql
+```
 
 
 Email: Ehsan.Shirzadi@Gmail.com

@@ -56,7 +56,21 @@ After editing the file, restart Kubectl:
 systemctl daemon-reload
 systemctl restart kubelet
 ```
-
-
+### Set default storage class:
+```
+kubectl patch storageclass storage_class_name -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+```
+### Unset default storage class:
+```
+kubectl patch storageclass storage_class_name -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+```
+### Get metrics:
+```
+kubectl top pods
+kubectl top nodes
+```
 ### References:
 - [How to Clean Up Old Containers and Images in Your Kubernetes Cluster](https://www.howtogeek.com/devops/how-to-clean-up-old-containers-and-images-in-your-kubernetes-cluster/)
+- [How to find available resources in a Kubernetes Cluster level?](https://stackoverflow.com/questions/59212544/how-to-find-available-resources-in-a-kubernetes-cluster-level)
+- []()
+- []()
