@@ -1,6 +1,6 @@
 from kubernetes import client, config
 import os
-KUBE_CONFIG_PATH = "/home/ehsan/Documents/k8s_configs/afranet.yaml"
+KUBE_CONFIG_PATH = "/home/ehsan/asiatech"
 configuration = config.load_kube_config(config_file=os.environ.get("KUBECONFIG", KUBE_CONFIG_PATH))
 
 v1 = client.CoreV1Api()
