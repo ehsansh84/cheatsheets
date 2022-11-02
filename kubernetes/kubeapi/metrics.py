@@ -27,4 +27,4 @@ def node_metrics():
 from time import sleep
 while True:
     node_metrics()
-    sleep(1)
+    sleep(10)
