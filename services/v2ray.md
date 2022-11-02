@@ -2,8 +2,8 @@
 ## Method 1:
 ```
 sudo apt update
-sudo apt install docker.io
-sudo apt install docker-compose
+sudo apt install -y docker.io
+sudo apt install -y docker-compose
 wget https://raw.githubusercontent.com/SonyaCore/vmess-deploy/main/deploy.sh
 bash deploy.sh
 ```
