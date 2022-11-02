@@ -21,4 +21,9 @@ def list_pods():
     print(pods)
 
 
+def list_pvcs():
+    pvcs = [item.metadata.name for item in v1.list_persistent_volume_claim_for_all_namespaces().items]
+    print(pvcs)
+
+
 list_pods()
