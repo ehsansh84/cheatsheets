@@ -11,6 +11,5 @@ transmission-cli http://releases.ubuntu.com/16.10/ubuntu-16.10-desktop-amd64.iso
 
 ### References:
 - [How to Download Torrents from the Command Line in Ubuntu](https://www.maketecheasier.com/how-to-download-torrents-from-the-command-line-in-ubuntu/)
-- []()
-- []()
+
  
