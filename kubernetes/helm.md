@@ -24,7 +24,10 @@ helm package .
 helm registry login harbor.domain.com -u admin
 helm push package_name.tgz oci://mycontainerregistry.domain.com/helm
 ```
-
+Simple install:
+```
+helm install INSTALLATION_NAME . -f values.yaml
+```
 
 | Command          | Description                         |
 | ---------------- |:-----------------------------------|
