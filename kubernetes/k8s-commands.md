@@ -41,6 +41,10 @@ kubectl config view --flatten > kube.config
 ```
 kubectl taint nodes node1 storage-node=true:NoSchedule
 ```
+### Remove taint (Only add a `-` at the end):
+```
+kubectl taint nodes node1 storage-node=true:NoSchedule-
+```
 ### Create secret from certificate:
 ```
 kubectl create secret tls secret_name --cert=fullchain.pem --key=private.key -n namespace
