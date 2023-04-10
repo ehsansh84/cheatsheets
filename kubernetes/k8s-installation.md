@@ -44,6 +44,10 @@ sysctl -p
 ```
 kubeadm init
 ```
+If you are using a load balancer for your masters, use this syntax:
+```
+kubeadm init --control-plane-endpoint=HA_IP:6443
+```
 
 Join a node with this command :
 ```
