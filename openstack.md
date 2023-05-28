@@ -12,3 +12,7 @@ ssh_pwauth: True
 ssh_authorized_keys:
   - ssh-rsa YOUR KEY
   ```
+  
+After the instance initiated, you can find this config here:
+```/var/lib/cloud/instance/cloud-config.txt```
+
