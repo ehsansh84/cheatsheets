@@ -16,3 +16,12 @@ ssh_authorized_keys:
 After the instance initiated, you can find this config here:
 ```/var/lib/cloud/instance/cloud-config.txt```
 
+You can get ip of instance from inside:
+```
+instance_ip=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4)
+```
+
+You can get UUID of instance from inside:
+```
+instance_uuid=$(curl -s http://169.254.169.254/openstack/latest/meta_data.json | grep -oP '"uuid": "\K[^"]+')
+```
