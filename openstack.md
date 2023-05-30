@@ -33,5 +33,9 @@ You can see cloud-init logs:
 ```
 tail -f /var/log/cloud-init-output.log
 ```
+Re-run cloud-init:
+```
+systemctl restart cloud-init.service
+```
 
 
