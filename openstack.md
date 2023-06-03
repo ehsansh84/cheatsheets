@@ -37,5 +37,11 @@ Re-run cloud-init:
 ```
 systemctl restart cloud-init.service
 ```
-
-
+Install openstack cli:
+```
+pip install python-openstackclient
+```
+Install octavia for openstack cli
+```
+pip install python-octaviaclient
+```
