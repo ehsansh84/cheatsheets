@@ -25,6 +25,10 @@ You can get UUID of instance from inside:
 ```
 instance_uuid=$(curl -s http://169.254.169.254/openstack/latest/meta_data.json | grep -oP '"uuid": "\K[^"]+')
 ```
+Another way to get instance_id:
+```
+cloud-init query v1.instance_id
+```
 Full cloud-config is here:
 ```
 /etc/cloud/cloud.cf
