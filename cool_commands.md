@@ -222,3 +222,7 @@ echo http://mirror.arvancloud.com/alpine/v3.16/main > /etc/apk/repositories
 ```
 du -sh *
 ```
+### Replace with env using sed
+```
+sed 's/xxx/'$PWD'/'
+```
