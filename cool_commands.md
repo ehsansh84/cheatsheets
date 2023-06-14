@@ -226,3 +226,7 @@ du -sh *
 ```
 sed 's/xxx/'$PWD'/'
 ```
+### Define alias with parameter:
+```
+alias xx='function ssh_ip() { ssh -p2510 ubuntu@"$1"; }; ssh_ip'
+```
