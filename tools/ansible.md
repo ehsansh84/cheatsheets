@@ -94,5 +94,9 @@ IP | SUCCESS => {
     "ping": "pong"
 }
 ```
+Run a simple command on server:
+```
+ansible all -i 62.3.42.232, -m shell -a "ls /home -l" -u ubuntu
+```
 
 Web: www.ehsanshirzadi.com
