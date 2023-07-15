@@ -80,5 +80,23 @@ pip install docker-py`
 ```
 That's it! you can now check your client for /tmp/hello.text
 
+An inline command to test connection using ansible:
+```
+ansible all -i IP, -m ping -u USERNAME
+```
+the answer will be:
+```
+IP | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+```
+Run a simple command on server:
+```
+ansible all -i 62.3.42.232, -m shell -a "ls /home -l" -u ubuntu
+```
 
 Web: www.ehsanshirzadi.com

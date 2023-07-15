@@ -48,7 +48,10 @@ If you are using a load balancer for your masters, use this syntax:
 ```
 kubeadm init --control-plane-endpoint=HA_IP:6443
 ```
-
+Use a custom cri socket:
+```
+kubeadm init --cri-socket=unix:///var/run/containerd/containerd.sock
+```
 Join a node with this command :
 ```
 kubeadm join xxx.xxx.xxx.xxx:6443 --token wqjxpm.vqupwqtp5xyvf1cg \
