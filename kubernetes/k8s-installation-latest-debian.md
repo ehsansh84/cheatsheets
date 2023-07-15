@@ -50,3 +50,11 @@ And run:
 ```
 sudo kubeadm init --config config.yaml
 ```
+You can download only images:
+```commandline
+sudo kubeadm config images pull --config config.yaml
+```
+And if you want to see the list of images, see like this:
+```commandline
+crictl --runtime-endpoint=/run/containerd/containerd.sock images
+```
