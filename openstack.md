@@ -49,3 +49,11 @@ Install octavia for openstack cli
 ```
 pip install python-octaviaclient
 ```
+
+Use thiese commands in cli:
+```
+openstack loadbalancer show 321015c4-7ced-4d51-b72a-059dbae1d046
+openstack loadbalancer list
+# in case of SSL errors you can add --insecure like that:
+openstack --insecure loadbalancer show 321015c4-7ced-4d51-b72a-059dbae1d046
+```
