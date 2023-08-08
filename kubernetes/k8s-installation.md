@@ -17,6 +17,15 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
+Install specific version of kubectl, kubeadm, kubelet:
+```
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
+  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list && \
+  sudo apt-get update -q && \
+  sudo apt-get install -qy kubelet=<version> kubectl=<version> kubeadm=<version>
+```
+Versions are like this: `1.26.7-00`, `1.27.4-00`, `1.25.12-00`
+
 ### Change native cgroup to systemd
 Run this for all nodes
 ```
