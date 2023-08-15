@@ -51,3 +51,18 @@ db.createUser({
     ],
 });
 ```
+If you want to apply authentication in mongodb, you must run mongodb using --auth switch.
+If it is running inside a docker-compose, do it like this:
+```yaml
+version: '3.3'
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: unless-stopped
+    ports:
+      - 27027:27017/tcp
+    volumes:
+      - /volumes/mongodb/data:/data/db
+    command: --auth
+```
