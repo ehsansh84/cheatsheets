@@ -51,6 +51,12 @@ db.createUser({
     ],
 });
 ```
+In this case AUTH_DATABASE is admin and connection URI will be:
+```
+mongodb://USERNAME:PASSWORD@HOST:PORT/AUTH_DATABASE
+```
+
+
 If you want to apply authentication in mongodb, you must run mongodb using --auth switch.
 If it is running inside a docker-compose, do it like this:
 ```yaml
