@@ -37,3 +37,17 @@ db.contest.aggregate([
  mongoexport --db newshub --collection news --out news_small.json --query '{"status": "summary", "create_date": {"$gt": {"$date": "2021-01-14T11:56:13.248Z"}}}'
  ```
 
+### Create an admin user:
+```
+use admin
+
+db.createUser({
+    user: 'root',
+    pwd: 'roosh',
+    roles: [
+            { role: "root", db: "admin" },
+            { role: "userAdminAnyDatabase", db: "admin" },
+            { role: "dbAdminAnyDatabase", db: "admin" }
+    ],
+});
+```
