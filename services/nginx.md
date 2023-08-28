@@ -4,6 +4,11 @@
 Reload configurations: `nginx -s reload`
 Test configurations: `nginx -t`
 
+Default directory for nginx config files:
+```
+/etc/nginx/conf.d
+```
+
 ### Config to force SSL:
 ```
 server {
