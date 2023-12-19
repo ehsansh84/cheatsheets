@@ -29,6 +29,9 @@ ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=main_w-overlay_w:m
 # or
 ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=W-w:H-h" output.mp4
 ```
-
+### Extract audio from video:
+```
+ffmpeg -i input_video.mp4 -vn -acodec libmp3lame -q:a 0 output_audio.mp3
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
