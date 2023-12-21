@@ -37,5 +37,9 @@ ffmpeg -i input_video.mp4 -vn -acodec libmp3lame -q:a 0 output_audio.mp3
 ```
 ffmpeg -i input_audio.mp3 -i cover_image.jpg -map 0 -map 1 -c copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" output_audio_with_cover.mp3
 ```
+### Resize an image:
+```
+ffmpeg -i logo.png -vf scale=128:128 output.png
+```
 Email: Ehsan.Shirzadi@Gmail.com
 Web: www.ehsanshirzadi.com
